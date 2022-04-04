@@ -1,0 +1,21 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.home-container img {
+    width: 500px;
+    height: 700px;
+}
+
+.product-container h1 {
+    color: black;
+    font-weight: bolder;
+}
+
+
+.reviews-container {
+    text-align: center;
+}
