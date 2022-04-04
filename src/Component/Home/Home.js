@@ -21,7 +21,7 @@ const Home = () => {
             <h1 className='review-title'>Customer Reviews(3)</h1>
             <div className='review-container'>
                 {
-                    reviews.map(review => <ReviewsPage
+                    reviews.slice(0, 3).map(review => <ReviewsPage
                         key={review.id}
                         review={review}
                     ></ReviewsPage>)
