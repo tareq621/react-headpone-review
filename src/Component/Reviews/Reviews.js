@@ -1,9 +1,17 @@
 import React from 'react';
+import useReviews from '../../Hooks/useReviews';
+import ReviewsPage from '../ReviewsPage/ReviewsPage';
 
-const Reviews = () => {
+const Reviews = (props) => {
+
+    const [reviews, setReviews] = useReviews()
     return (
-        <div>
-            <h1>this is reviews</h1>
+        <div className='review-container'>
+            {
+                reviews.map(review => <ReviewsPage
+                    review={review}
+                ></ReviewsPage>)
+            }
         </div>
     );
 };

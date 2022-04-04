@@ -1,0 +1,9 @@
+.dashboard-container {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.area-chart {
+    margin-left: 100px;
+}

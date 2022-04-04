@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import images from '../../headphone.png'
+import useReviews from '../../Hooks/useReviews';
 import ReviewsPage from '../ReviewsPage/ReviewsPage';
 import './Home.css'
 const Home = () => {
-    const [reviews, setReviews] = useState([])
-    useEffect(() => {
-        fetch('reviews.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [])
-    
+    const [reviews, setReviews] = useReviews()
+
     return (
         <div>
             <div className='home-container'>
