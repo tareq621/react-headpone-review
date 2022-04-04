@@ -42,6 +42,7 @@ const Dashboard = () => {
     return (
         <div className='dashboard-container'>
             <div>
+                <h3 className='text-center'>Month vs Sell</h3>
                 <LineChart width={400} height={300} data={data}>
                     <Line dataKey={'sell'}></Line>
                     {/* <Line dataKey={'revenue'}></Line> */}
@@ -53,6 +54,7 @@ const Dashboard = () => {
             </div>
 
             <div className='area-chart' style={{ width: '40%', height: 300 }}>
+                <h3 className='text-center'>Investment vs Revenue</h3>
                 <ResponsiveContainer>
                     <AreaChart data={data}
                         margin={{

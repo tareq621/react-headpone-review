@@ -1,4 +1,5 @@
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import images from '../../headphone.png'
 import useReviews from '../../Hooks/useReviews';
 import ReviewsPage from '../ReviewsPage/ReviewsPage';
@@ -27,11 +28,12 @@ const Home = () => {
                     ></ReviewsPage>)
                 }
             </div>
-            <div className='text-center mb-2'>
-                <Button className='mt-2'>SEE ALL REVIEWS</Button>
-
+            <div className='button-reviews text-center mt-4 mb-4 fw bold text-white'>
+                <Button className='bg-dark text-decoration-none'>
+                    <Link to="/reviews" >SEE ALL REVIEWS</Link>
+                </Button>
             </div>
-        </div>
+        </div >
     );
 };
 
