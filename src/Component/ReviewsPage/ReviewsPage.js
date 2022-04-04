@@ -6,7 +6,7 @@ const ReviewsPage = (props) => {
         <div className='review-list shadow rounded'>
             <div>
                 <h4>{name}</h4>
-                <p><strong>Review:</strong>{review}</p>
+                <p><strong>Review: </strong>{review}</p>
                 <p><strong>Ratings:</strong>{ratings}</p>
             </div>
         </div>
