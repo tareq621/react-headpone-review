@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import images from '../../headphone.png'
 import ReviewsPage from '../ReviewsPage/ReviewsPage';
 import './Home.css'
 const Home = () => {
+    const [reviews, setReviews] = useState([])
+    useEffect(() => {
+        fetch('reviews.json')
+            .then(res => res.json())
+            .then(data => setReviews(data))
+    }, [])
+    
     return (
         <div>
             <div className='home-container'>
@@ -15,9 +23,18 @@ const Home = () => {
                     <img src={images} alt="" />
                 </div>
             </div>
-            <div className='reviews-container'>
-                <h1>Customer Reviews(3)</h1>
-                <ReviewsPage></ReviewsPage>
+            <h1 className='review-title'>Customer Reviews(3)</h1>
+            <div className='review-container'>
+                {
+                    reviews.map(review => <ReviewsPage
+                        key={review.id}
+                        review={review}
+                    ></ReviewsPage>)
+                }
+            </div>
+            <div className='text-center mb-2'>
+                <Button className='mt-2'>SEE ALL REVIEWS</Button>
+
             </div>
         </div>
     );

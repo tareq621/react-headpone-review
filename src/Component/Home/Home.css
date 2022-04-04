@@ -15,7 +15,17 @@
     font-weight: bolder;
 }
 
-
-.reviews-container {
+.review-title {
     text-align: center;
+}
+
+.review-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+    margin-top: 40px;
+
 }
