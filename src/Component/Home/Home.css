@@ -10,13 +10,18 @@
     height: 700px;
 }
 
+.title-name-headphone {
+    color: rebeccapurple;
+}
+
 .product-container h1 {
-    color: black;
-    font-weight: bolder;
+    font-weight: 900;
+    font-size: 50px;
 }
 
 .review-title {
     text-align: center;
+    color: #FF6666;
 }
 
 .review-container {

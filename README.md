@@ -3,7 +3,7 @@
 Headphone website with react routes
 
 ## Live website link
-(https://idyllic-strudel-c9f47f.netlify.app/)
+https://idyllic-strudel-c9f47f.netlify.app/
 
 
 * First using header and home page
