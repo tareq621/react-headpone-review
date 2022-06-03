@@ -8,7 +8,7 @@ https://idyllic-strudel-c9f47f.netlify.app/
 
 * First using header and home page
 * Generate API data use for reviews
-* Reviews show review routes and see all review
+* Reviews show review routes and see all reviews
 * Two Dashboard create
 * Two question answer blogs routes 
 
